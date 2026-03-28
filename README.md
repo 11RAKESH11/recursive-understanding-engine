@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# 🧠 Recursive Understanding Engine (RUE)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **"If an answer is given, understanding is not automatically achieved."** > RUE is a pedagogical system that guarantees true conceptual clarity by breaking complex topics into recursive, interactive, load-bearing building blocks.
 
-## Available Scripts
+Built for the **HackMarch 2.0 Hackathon** | Sponsor: **BuilderThinking**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📸 System Interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*(Add your screenshots here! Make sure to use the Light Mode ones with the Green/Blue tags)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Knowledge Map & Mastery Interface](./path-to-your-screenshot1.png)
+*RUE mapping the prerequisites for Photosynthesis, adapting difficulty, and tracking mastery.*
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Core Features
 
-### `npm run build`
+RUE is not just a chatbot wrapper; it is an opinionated learning orchestration engine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **🎯 Intelligent Concept Extraction:** Uses Google Gemini to extract only "load-bearing" prerequisites, ignoring common filler words and reducing cognitive load.
+* **🧬 Recursive Knowledge Graph:** Users can click on extracted concepts to go infinitely deeper, visually mapping their learning journey.
+* **🧠 ELI5 Adaptive Logic:** As users reach deeper cognitive layers (Depth > 3), the backend dynamically alters the system prompt to use "Explain Like I'm 5" metaphors, preventing jargon fatigue.
+* **✅ Mastery Progress Tracking:** A live checklist mathematically tracks a user's completion of a specific conceptual layer before they move on.
+* **⚡ Live Backend Caching:** Built-in `node-cache` ensures that previously explored concepts load in 0ms, drastically reducing LLM API costs at scale.
+* **📥 Markdown Study Guide Export:** Traverses the user's recursive click-history to compile a perfectly formatted Markdown study document.
+* **👁️ 100% AI Transparency:** A clean UI toggle allows users to view the exact system prompts, token compute costs, and model architecture in real-time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tech Stack
 
-### `npm run eject`
+**Frontend (The UI & Graph)**
+* **React.js**: For interactive state management and dynamic routing.
+* **Framer Motion**: For buttery-smooth, zero-clutter animations.
+* **React Markdown**: To elegantly format the LLM's educational prose.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Backend (The Reasoning Engine)**
+* **Node.js & Express**: Lightning-fast REST API architecture.
+* **Google Generative AI SDK**: Utilizing `gemini-2.5-flash-lite` (via Gemini 1.5 Flash backend) for low-latency inference.
+* **Strict JSON Schema (`responseSchema`)**: Forces the LLM to output highly-structured data payloads instead of unpredictable text.
+* **Node-Cache**: For API cost-optimization and instant retrieval of common queries.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Prerequisites
+* Node.js (v16 or higher)
+* A Google Gemini API Key
